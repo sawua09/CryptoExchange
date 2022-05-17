@@ -6,9 +6,12 @@
             >
                 <div class="flex items-center flex-shrink-0 text-white mr-6">
                     <px-icon class="mr-2" />
-                    <span class="font-semibold text-xl tracking-tight">
+                    <router-link
+                        :to="{ name: 'home' }"
+                        class="font-semibold text-xl tracking-tight"
+                    >
                         SawuaExchange
-                    </span>
+                    </router-link>
                 </div>
                 <div
                     class="hidden sm:block w-full blok flex-grow lg:flex lg:items-center lg:wauto"
