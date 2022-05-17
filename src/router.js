@@ -3,6 +3,7 @@ import Router from "vue-router"
 import Home from "@/views/Home"
 import About from "@/views/AboutPage"
 import Error from "@/views/ErrorPage"
+import CoinDetail from "@/views/CoinDetail"
 
 Vue.use(Router)
 
@@ -19,6 +20,11 @@ export default new Router({
             path: "/about",
             name: "about",
             component: About,
+        },
+        {
+            path: "/coin/:id",
+            name: "coin-detail",
+            component: CoinDetail,
         },
         {
             path: "*",
